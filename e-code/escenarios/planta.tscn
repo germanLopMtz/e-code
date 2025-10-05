@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://v6p31pi3le6v"]
+
+[ext_resource type="Texture2D" uid="uid://bhmp2gdqi6twg" path="res://plantada.PNG" id="1_jjcl8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b025y"]
+size = Vector2(22.25, 16.75)
+
+[node name="planta" type="Node2D"]
+
+[node name="plantada" type="Sprite2D" parent="."]
+position = Vector2(229.25, 194.125)
+scale = Vector2(0.12357956, 0.13205977)
+texture = ExtResource("1_jjcl8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(232, 204)
+shape = SubResource("RectangleShape2D_b025y")
